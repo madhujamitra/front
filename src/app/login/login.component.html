@@ -1,0 +1,35 @@
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4" style="padding: 10px; "> 
+    <a class="navbar-brand" href="#">Navtech</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <!-- Begin page content -->
+  <body class="text-center" style="padding-left:410px ;">
+    <div class="row g-2">
+      <div class="col-6">
+        <main class="form-signin">
+          <div class="card-header">
+            <h1 class="h3 mb-3 fw-normal">Sign In</h1>
+          </div>
+          <form>
+            <div class="form-floating">
+              <input [(ngModel)]="loginUserData.email" name="email" class="form-control" id="floatingInput"
+                placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input [(ngModel)]="loginUserData.password" name="password" class="form-control" id="floatingPassword"
+                placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="checkbox mb-3">
+            </div>
+            <button (click)="loginUser()" class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+          </form>
+        </main>
+      </div>
+    </div>
+  </body>
